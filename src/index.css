@@ -1,0 +1,121 @@
+/* General Styles */
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* Header Style */
+nav{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: white;
+  
+}
+
+.header-title{
+  font-size: 3.5rem;
+  color: #c4b004;
+}
+
+/* Main Style */
+.main{
+  margin: 15px 150px;
+  background-color: white;
+}
+
+.category-selection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-selection select{
+  font-size: 2.2rem;
+  padding: 10px;
+  margin: 0px 15px;
+  border-radius: 10px;
+}
+
+.category-selection option{
+  font-size: 2.2rem;
+  padding: 10px;
+}
+
+.main h2{
+  font-size: 2.2rem;
+}
+
+.emoji-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+
+.emoji-list p{
+  font-size: 2.0rem;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.emoji-list p:hover{
+  background-color: #c4b004;
+}
+
+/* Emoji Style */
+.emoji-popup{
+  background-color: white;
+  font-size: 2rem;
+  width: 200px;
+  height: 350px;
+  border-radius: 20px;
+  border: rgba(0, 0, 0, 0.486) 2px solid;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.emoji-popup .exit-popup{
+  margin-left: auto;
+  font-size: 3rem !important;
+}
+
+.exit-popup:hover, #copy-htmlCode:hover, #copy-unicode:hover{
+  background-color: #c4b004;
+  cursor: pointer;
+}
+
+.emoji-popup p{
+  padding-top: 10px;
+  font-size: 1.6rem;
+}
+
+.emoji-popup-current{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4rem !important;
+  padding-bottom: 10px;
+}
+
+.emoji-popup span{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+hr{
+  margin-bottom: 10px;
+}
+
+#copy-unicode, #copy-htmlCode{
+  margin-left: auto;
+  margin-right: auto;
+}
