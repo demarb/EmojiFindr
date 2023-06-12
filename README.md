@@ -13,3 +13,5 @@ Allow user to click on emoji
 Generate a pop up up on click that shows the emoji, along with its htmlCode and unicode
 Allows the user to copy the htmlCode or Unicode to clipboard on Click of button
 
+### API Used:
+https://github.com/cheatsnake/emojihub
