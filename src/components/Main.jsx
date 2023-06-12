@@ -83,7 +83,7 @@ export default function Main(){
         <>
             <section className="main">
                 <div className="category-selection">
-                    <h2>Category</h2>
+                    <h2>Category1</h2>
                     <select id="select-cat" value={selectedCategory} defaultValue='all'
                         onChange={handleCategoryChange}>
                             <option value='all'> All </option>
