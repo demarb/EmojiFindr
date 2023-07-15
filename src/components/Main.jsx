@@ -10,6 +10,7 @@ export default function Main(){
     const [allEmojis, setAllEmojis] = useState([])
     const [currentCategoryEmojis, setCurrentCategoryEmojis] = useState([])
     const [groupData, setGroupData] =  useState([])
+    const [loaded, setLoaded] =  useState(false)
 
     const [selectedEmoji, setSelectedEmoji] = useState(
         {
@@ -36,7 +37,10 @@ export default function Main(){
                 });
                 setAllEmojis(emojisWithId)
                 setSelectedCategory('all')
+                setTimeout(()=>setLoaded(true),"2000")
+                
             })
+            
     }, [])
 
     useEffect(()=>{       
@@ -47,7 +51,10 @@ export default function Main(){
         }
     }, [selectedCategory])
 
-    //Renders
+    //Renders0"
+    const preloaderGIF = <iframe src="https://giphy.com/embed/OcKLo9xfUxnEgKUw7i" width="200" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+    
     const catData = categoryData.map((cat)=>{
         return <option value={cat.category}> {cat.category} </option>
     })
@@ -93,7 +100,7 @@ export default function Main(){
                 </div>
 
                 <div className="emoji-list">
-                    {emojiData}
+                    {loaded ? emojiData : preloaderGIF}
                 </div>
 
                 {showPopup && <Emoji key={selectedEmoji.id} selectedEmoji={selectedEmoji} closePopup={closePopup} />}

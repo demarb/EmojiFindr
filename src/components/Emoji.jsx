@@ -11,8 +11,8 @@ export default function Emoji(props){
 
     //Function
     const handleExitClick = () => {
-        props.closePopup();
-      };
+      props.closePopup();
+    };
     
     const handleCopy = async (arrToCopy) => {
         try {
