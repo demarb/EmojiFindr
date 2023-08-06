@@ -8,9 +8,9 @@ EmojiFindr is a tool for identifying emojis. EmojiFindr has access to over 1791 
 EmojiFindr can:
 Show all available emojis
 Show emojis grouped by category
-Show emojis groubed by category and then by a subcategory if one is available
+Show emojis grouped by category and then by a subcategory if one is available
 Allow user to click on emoji
-Generate a pop up up on click that shows the emoji, along with its htmlCode and unicode
+Generate a pop up on click that shows the emoji, along with its htmlCode and unicode
 Allows the user to copy the htmlCode or Unicode to clipboard on Click of button
 
 ### API Used:
