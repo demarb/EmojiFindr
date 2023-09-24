@@ -15,3 +15,6 @@ Allows the user to copy the htmlCode or Unicode to clipboard on Click of button
 
 ### API Used:
 https://github.com/cheatsnake/emojihub
+
+### Preview:
+![App Preview](./preview.png)
